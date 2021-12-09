@@ -10,6 +10,15 @@ Asesor: **Dr. Enrique Camacho Pérez** ([ResearchGate](https://www.researchgate.
 ...
 
 
+# Contenido del repositorio
+En este repositorio se encuentran el código de todos los procesos, manipulaciones y visualizaciones de los datos usados en el trabajo de tesis. 
+La gran mayoría de los procesos se encuentran documentados en _Jupyter notebooks_, con excepción de una visualización realizada con el software 
+**R**, para esta existe un _script_ `.R` y un archivo `.Rmd`.
+
+# Nota
+Se suben _Jupyter notebooks_ de las celdas del código, la documentación y redacción más detallada sera subida durante el transcurso de las siguientes 
+semanas.
+
 # Cita
 Si este proyecto de tesis le resulta de utilidad para sus trabajos científicos, académicos o de cualquier otro rubro, favor de citarlo:
 
