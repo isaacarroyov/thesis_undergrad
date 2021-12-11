@@ -1,6 +1,6 @@
 # Tesis de Licencitura: Herramientas estadísticas y computacionales en imágenes satelitales de Earth Engine para la exploración de incendios forestales
 
-Presentado por: **Miguel Isaac Arroyo Velázquez** ([LinkedIn](www.linkedin.com/in/isaacarroyov), [Otros](https://linktr.ee/unisaacarroyov))
+Presentado por: **Miguel Isaac Arroyo Velázquez** ([LinkedIn](www.linkedin.com/in/isaacarroyov), [Otras redes sociales](https://linktr.ee/unisaacarroyov))
 
 Para obtener el título de: **Ingeniero Físico**
 
