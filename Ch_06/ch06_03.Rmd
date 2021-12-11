@@ -1,0 +1,95 @@
+---
+title: 'Capítulo 6: Análisis Exploratorio de Datos – Google Earth Engine'
+author: "Miguel Isaac Arroyo Velázquez"
+output: pdf_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(comment=NA)
+```
+
+**Nota:** Este documento es un complemento de visualizaciones, principalmente para las [**Ridgeline plots**](https://www.data-to-viz.com/graph/ridgeline.html). En este documento se explica el proceso para la creación de visualizaciones con **R** y **`ggplot2`**.
+
+```{r libraries, comment=NA, message=FALSE}
+library(dplyr) #Filtro y manipulacion de datos
+library(lubridate) # Cambio a date
+library(ggplot2) #graficas
+library(ggridges) #graficas 
+library(viridis) # color gradient
+library(hrbrthemes)
+```
+
+# Variables Ambientales
+## Temperatura
+El primer paso es cargar los datos 
+```{r load_data, comment=NA}
+df = read.csv('../datos/GEE/temperatura_yuc_modis_ee.csv')
+head(df) # Ver primeras filas del data.frame
+str(df) # Ver la estructura del data.frame
+```
+Los años y los meses, a pesar de ser números, son categorías, por lo que hay que cambiar la estructura de los datos, pasar de **`int`** a **`factor`**, para que pueda ser fácilmente manipulable con **R** y **`ggplot2`**. 
+
+```{r change_factors}
+df$Month = factor(df$Month, labels=c("Enero", "Febrero","Marzo", "Abril", "Mayo", "Junio",
+                                     "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre",
+                                     "Diciembre")
+                  )
+df$Year = factor(df$Year)
+str(df)
+```
+
+## Distribución de la temperatura a través de los años
+Para crear un gráfico con ggplot2 se van creando capas, la manera en la que funciona la gramática de gráficos.
+
+Primero se empieza definiendo los datos que se quieren mostrar y la capa del tipo de gráfico. Para ir agregando capas se usa el símbolo de **+**
+```{r define data, out.height="30%", fig.align='center'}
+# Se definen los datos a mostrar
+plot_temp_years = ggplot(df, aes(x=Temperatura, y=Year, fill=stat(x)))
+plot_temp_years
+# Se agrega la capa del tipo de gráfico
+plot_temp_years = plot_temp_years + geom_density_ridges_gradient(scale=2,rel_min_height=0.01)
+plot_temp_years
+```
+Se puede ver que con 2 líneas de código se obtiene la visualización deseada, las siguientes capas serán para poder estilizar la visualización, tal como agregar un tema, criterio de relleno, etiquetas a ejes o legendas y agregar títulos, suptítulos o _captions_
+
+```{r tune plot 01, out.height="30%", fig.align='center' }
+# Se agrega tema o criterio para el relleno, colo y tipo de relleno
+plot_temp_years = plot_temp_years + scale_fill_viridis_c(option="A", name='Temperatura\n(°C)')
+# y etiquetas en ejes (para el eje "y" no es tan necesario)
+plot_temp_years = plot_temp_years + xlab("Temperatura (°C)") + ylab("")
+plot_temp_years
+```
+
+
+```{r tune plot 02, out.height="30%", fig.align='center' }
+# Titulo, subtitulo y caption
+plot_temp_years = plot_temp_years + labs(title = "Distribución de temperaturas a través de\nlos años en Yucatán, México", subtitle = "Periodos 2001-2019", caption = "Fuente: MOD11A1.006 Terra Land Surface Temperature and\nEmissivity Daily Global 1km via Google Earth Engine")
+plot_temp_years
+```
+
+```{r tune plot 03, out.height="30%", fig.align='center' }
+# limites del plot
+plot_temp_years = plot_temp_years + scale_x_continuous(limits = c(15, 43))
+plot_temp_years
+```
+
+Finalamente se agregan capas para configurar tamaño de las etiquetas de cada parte de los objetos del gráfico, por ejemplo:
+
+```R
+plot +   theme(
+    plot.title = element_text(size=20), # title text size
+    plot.subtitle = element_text(size=17), # subtitle text size
+    axis.title.x = element_text(size=15), # xlabel size
+    #axis.title.y = element_text(size=15), # ylabel size
+    axis.text.x = element_text(size=12), # x ticks label size
+    axis.text.y = element_text(size=14), # y ticks label size
+    plot.caption = element_text(size=11),
+  ) 
+```
+
+
+
+## Gráficos de la tesis
+En el archivo llamado **`ch06_06.R`** se encuentran los gráficos usados durante la tesis.
+
+
