@@ -6,6 +6,8 @@ Para obtener el título de: **Ingeniero Físico**
 
 Asesor: **Dr. Enrique Camacho Pérez** ([ResearchGate](https://www.researchgate.net/profile/Enrique-Camacho-Perez), [LinkedIn](https://www.linkedin.com/in/ekamacho/))
 
+_The english version of this REAMDE.md file is found [here](https://github.com/isaacarroyov/thesis_undergrad/blob/main/readme_en.md)_
+
 # Resumen
 Los incendios forestales son fenómenos complejos donde se encuentran involucradas diferentes  variables, desde naturales hasta sociales o poblacionales. 
 Diferentes perspectivas son necesarias para una mejor comprensión de la problemática, y el uso de la tecnología no debe de ser una barrera. En este trabajo se exploran 
