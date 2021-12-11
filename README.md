@@ -7,8 +7,14 @@ Para obtener el título de: **Ingeniero Físico**
 Asesor: **Dr. Enrique Camacho Pérez** ([ResearchGate](https://www.researchgate.net/profile/Enrique-Camacho-Perez), [LinkedIn](https://www.linkedin.com/in/ekamacho/))
 
 # Resumen
-...
-
+Los incendios forestales son fenómenos complejos donde se encuentran involucradas diferentes  variables, desde naturales hasta sociales o poblacionales. 
+Diferentes perspectivas son necesarias para una mejor comprensión de la problemática, y el uso de la tecnología no debe de ser una barrera. En este trabajo se exploran 
+imágenes satelitales provenientes de la plataforma Google Earth Engine. Se realiza un análisis exploratorio en variables ambientales (temperatura de 
+la superficie, humedad del suelo y sequía) e índices de vegetación (NDVI y EVI) tomando en cuenta las regiones de afectadas por incendios forestales. 
+Adicionalmente se comparan con otros conjuntos de datos (registro de incendios forestales del 2017 por parte de la Comisión Nacional Forestal y 
+registro de puntos de calor por parte de _Fire Information for Resource Management System_). Al final, los conjuntos de datos proporcionados por 
+Google Earth Engine exponen la historia y los comportamientos de todas las variables, siendo un gran recurso para una mejor contextuaización 
+de la problemática.
 
 # Contenido del repositorio
 En este repositorio se encuentran el código de todos los procesos, manipulaciones y visualizaciones de los datos usados en el trabajo de tesis. 
@@ -45,7 +51,7 @@ de ayuda:
 * [Instalación de API de Python](https://developers.google.com/earth-engine/guides/python_install) :computer:
 
 ## Ambiente de Python
-El ambiente de conda de Python es el siguiente:
+El ambiente de `conda` de Python es el siguiente:
 
 * **Python**: 3.8.10
 * [**JupyterLab**](https://jupyter.org/install) : 3.0.16
