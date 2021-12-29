@@ -40,8 +40,6 @@ Si este proyecto de tesis le resulta de utilidad para sus trabajos científicos,
 * Tipo de tesis: **Tesis de Licenciatura**
 
 
-
-
 # Requisitos de software
 
 ## Plataforma de Google Earth Engine
@@ -75,3 +73,12 @@ El ambiente de `conda` de Python es el siguiente:
 * **[ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html)**:  0.5.3
 * **[viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)**: 0.6.1
 * **[hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)**: 0.8.0
+
+# Dedicatoria
+_Este apartado no esta presente dentro del documento, es por lo que lo adjunto en el repositorio_
+
+Este trabajo se lo dedico mi yo del pasado, una persona que curiosa que sabía que quería generar un **impacto con los datos** pero sin saber 
+por donde empezar. **Si eres como mi yo del pasado, entonces la dedicatoria también es para ti. Espero de todo corazón que te sea útil**
+
+También le dedico este trabajo a mi yo del futuro, para que recuerdes donde empezaste y cuando avanzaste, de esta manera puedas ir poco a poco 
+lidiando del Síndrome del Impostor que siempre aparece en los momentos importantes de nuestra vida.
