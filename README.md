@@ -80,5 +80,5 @@ _Este apartado no esta presente dentro del documento, es por lo que lo adjunto e
 Este trabajo se lo dedico mi yo del pasado, una persona que curiosa que sabía que quería generar un **impacto con los datos** pero sin saber 
 por donde empezar. **Si eres como mi yo del pasado, entonces la dedicatoria también es para ti. Espero de todo corazón que te sea útil**
 
-También le dedico este trabajo a mi yo del futuro, para que recuerdes donde empezaste y cuando avanzaste, de esta manera puedas ir poco a poco 
-lidiando del Síndrome del Impostor que siempre aparece en los momentos importantes de nuestra vida.
+También le dedico este trabajo a mi yo del futuro, para que recuerdes donde empezaste y cuánto avanzaste, de esta manera puedas ir poco a poco 
+lidiando con el Síndrome del Impostor que siempre aparece en los momentos importantes de nuestra vida.
