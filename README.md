@@ -18,6 +18,8 @@ registro de puntos de calor por parte de _Fire Information for Resource Manageme
 Google Earth Engine exponen la historia y los comportamientos de todas las variables, siendo un gran recurso para una mejor contextuaización 
 de la problemática.
 
+[Descargar documento (aproximadamente 41 MB)](https://github.com/isaacarroyov/thesis_undergrad/blob/main/pdfs/Tesis_de_Licenciatura_Isaac_Arroyo_Incendios_Forestales_2021.pdf)
+
 # Contenido del repositorio
 En este repositorio se encuentran el código de todos los procesos, manipulaciones y visualizaciones de los datos usados en el trabajo de tesis. 
 La gran mayoría de los procesos se encuentran documentados en _Jupyter notebooks_, con excepción de una visualización realizada con el software 
