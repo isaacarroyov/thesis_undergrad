@@ -49,7 +49,6 @@ Para poder ejecutar las _Jupyter notebooks_ es fundamental registrarse a la plat
 de ayuda:
 
 * [Registro a la plataforma](https://earthengine.google.com/signup/) :pencil:
-* [Tutorial para el registro](https://www.instagram.com/tv/CRkZ3tHD8CY/?utm_source=ig_web_copy_link) :movie_camera:
 * [Instalación de API de Python](https://developers.google.com/earth-engine/guides/python_install) :computer:
 
 ## Ambiente de Python
